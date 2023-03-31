@@ -1,0 +1,92 @@
+{
+  "kind": "collectionType",
+  "collectionName": "meuns",
+  "info": {
+    "singularName": "meun",
+    "pluralName": "meuns",
+    "displayName": "meun",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "menuType": {
+      "type": "enumeration",
+      "enum": [
+        "m",
+        "q",
+        "b"
+      ]
+    },
+    "sort": {
+      "type": "integer"
+    },
+    "path": {
+      "type": "string",
+      "required": true
+    },
+    "component": {
+      "type": "string"
+    },
+    "redirect": {
+      "type": "string"
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    },
+    "parentId": {
+      "required": true,
+      "type": "integer"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "internationalization": {
+      "type": "string"
+    },
+    "caption": {
+      "type": "string"
+    },
+    "permissionsCode": {
+      "type": "string"
+    },
+    "navIcon": {
+      "type": "string"
+    },
+    "menuIcon": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
+      ]
+    },
+    "visible": {
+      "type": "boolean",
+      "default": true
+    },
+    "externalLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "cache": {
+      "type": "boolean",
+      "default": true
+    },
+    "hiddenChild": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

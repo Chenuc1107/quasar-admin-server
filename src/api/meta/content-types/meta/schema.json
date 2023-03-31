@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "metas",
+  "info": {
+    "singularName": "meta",
+    "pluralName": "metas",
+    "displayName": "meta",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "menuIcon": {
+      "type": "string"
+    },
+    "navIcon": {
+      "type": "string"
+    },
+    "target": {
+      "type": "enumeration",
+      "enum": [
+        "_self",
+        "_blank"
+      ]
+    },
+    "caption": {
+      "type": "string"
+    },
+    "permissionsCode": {
+      "type": "string"
+    },
+    "internationalization": {
+      "type": "string"
+    },
+    "visible": {
+      "type": "boolean",
+      "default": false
+    },
+    "externalLink": {
+      "type": "boolean",
+      "default": false
+    },
+    "hiddenChild": {
+      "type": "boolean",
+      "default": false
+    },
+    "cache": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
